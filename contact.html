@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sora Illust</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo"><a href="Porto.html">Sora.Illust</a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="Porto.html">Home</a></li>
+        <li><a href="works.html">Works</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="banner"></div>
+  <div class="cnt">
+    <img src="Illust/CB.png" width="50%">
+    <a>Contact me on : </a>
+  </div>
+  <div class="container">
+    <div class="Illust"><a href="#https://www.instagram.com/dr3n._?igsh=bWZ2dXF2NnhjNnBk">Instagram</a></div> 
+    <div class="Twitter"><a href="#https://twitter.com/SoraYi_74?t=BnsLueU6maxudprOQ8phwQ&s=09">X/Twitter</a></div>
+    <div class="AN"><a href="#mailto:sorayee.74@gmail.com">E-Mail</a></div>  
+   </div>
+      <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menu = document.querySelector(".menu-list");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = ()=>{
+          menu.classList.add("active");
+          menuBtn.classList.add("hide");
+          cancelBtn.classList.add("show");
+          body.classList.add("disabledScroll");
+        }
+        cancelBtn.onclick = ()=>{
+          menu.classList.remove("active");
+          menuBtn.classList.remove("hide");
+          cancelBtn.classList.remove("show");
+          body.classList.remove("disabledScroll");
+        }
+    
+        window.onscroll = ()=>{
+          this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+      </script>
+      <div class="footer">
+        <a>© 2024, All rights reserved</a>
+</body>
+</html>
