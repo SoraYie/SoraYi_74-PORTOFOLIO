@@ -803,4 +803,14 @@ body {
   font-family: myFirstFont;
   font-size: 16px;
 }
-
+.video video{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-left: center;
+  align-content: center;
+  width: 1000px;
+  height: auto;
+  padding: 50px;
+  margin-left: 180px;
+}
