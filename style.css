@@ -42,6 +42,7 @@ z-index: 5;
 width: 100%;
 padding: 25px 0;
 transition: all 0.3s ease;
+background: #3C2E92;
 }
 .navbar.sticky{
 padding: 10px 0;
@@ -93,7 +94,7 @@ display: inline-flex;
 .menu-list li a:hover{
   color: #ffffff;
 }
-#sec1 {
+.sec1 {
   background: src(#banner);
 }
 .banner{
@@ -347,7 +348,7 @@ display: inline-flex;
   top: 10px;
 }
 .Wip{
-
+  
   margin-bottom: 50px;
   margin-top: 100px;
   background-color: #271c6b;
@@ -373,6 +374,7 @@ display: inline-flex;
   vertical-align: middle;
   padding: 7px;
   transition: all 0.3s ease;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .work img:hover{
   position: relative;
@@ -612,6 +614,14 @@ display: inline-flex;
   font-family: mySecondFont;
   font-size: 20px;
 }
+.net img{
+  transition: all 0.3s ease;
+}
+.net img:hover{
+    position: relative;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+  }
 .net h1{
   font-size: 6vw;
   font-family: myFirstFont;
@@ -689,6 +699,7 @@ display: inline-flex;
   overflow: hidden;
 }
 .slider .list{
+  margin-top: 10px;
   position: absolute;
   width: max-content;
   height: 100%;
@@ -801,6 +812,7 @@ body {
 
 .gallery img:hover{
     opacity: 70%;
+    
 }
 .caption{
   font-family: mySecondFont;
@@ -937,6 +949,8 @@ body {
     margin-top: 8px;
     vertical-align: middle;
     padding: 7px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.15);
   }
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
@@ -953,29 +967,41 @@ body {
       max-width: 100%;
     }
   }
-  #scrollToTopBtn {
-    display: none;
+  .scrollTop {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: #333;
-    color: white;
+    display: flex;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    align-content: center;
+    text-decoration: none;
+    background-color: #251D32;
+    color: #ffffff;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
     cursor: pointer;
-    padding: 15px;
-    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+     font-family: myFirstFont;
 }
 
-#scrollToTopBtn:hover {
-    background-color: #555;
+.scrollTop.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
 }
-.scroll-to-top-btn{
-  font-family: myFirstFont;
-  font-size: 16px;
-}/*
+
+.scrollTop:hover {
+    background-color: #005B70;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+/*
 .video video{
   align-items: center;
   display: flex;
@@ -1007,4 +1033,5 @@ body {
   width: 100%;
   height: auto; /* Maintain aspect ratio */
   display: block; /* Ensure video is not inline */
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
 }
