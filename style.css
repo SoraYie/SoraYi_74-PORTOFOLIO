@@ -459,27 +459,27 @@ display: inline-flex;
   display: flex;
   justify-content: center; 
   align-items: center;
-  font-size: 5vw;
+
   font-family: myFirstFont;
   text-size-adjust: 100px;
   color: #ffffff;
   text-align: center;
-  padding: 2vwpx;
-  margin: 2vw;
-  border-radius: 2vw;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
   background-color: #271c6b;
-  width: 40vw; height:12vw; margin:2vw auto;
+  width: 250px; height:100px; margin:2vw auto;
   transition: all 0.3s ease;
   text-decoration: none;
 }
 .OW a{
   display: inline-block;
-  font-size: 5vw;
+  font-size: 30px;
   font-family: myFirstFont;
   text-size-adjust: 100px;
   color: #ffffff;
   text-align: center;
-  padding: 2vw;
+  padding: 15px;
   margin-bottom: 20px;
   border-radius: 10px;
   text-decoration: none;
@@ -496,15 +496,32 @@ display: inline-flex;
 }
 @media screen and (max-width: 800px) {
   .OW {
+    width: 40%;
+    height: 70px;
     flex: 50%;
     max-width: 50%;
+    font-size: 20px;
+  }
+  .OW a {
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
   }
 }
 @media screen and (max-width: 600px) {
   .OW {
+    justify-content: center;
     flex: 100%;
     max-width: 100%;
+    font-size: 20px;
   }
+}
+
+.footer{
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 .footer{
