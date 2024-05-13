@@ -150,15 +150,16 @@ display: inline-flex;
 }
 .title2 h3{
   font-family: myFirstFont;
+  font-size: 24px;
 }
 .title3{
-  font-size: 30px;
+  font-size: 18px;
   margin-top: 40px;
   text-align: center;
   font-family: myFirstFont;
 }
 .title3 h3{
-  font-size: 2.5vw;
+  font-size: 18px;
   font-family: mySecondFont;
 }
 .container{
