@@ -143,23 +143,23 @@ display: inline-flex;
   font-family: myFirstFont;
 }
 .title2{
-  font-size: 24px;
+  font-size: 21px;
   margin-top: 40px;
   text-align: center;
   font-family: myFirstFont;
 }
 .title2 h3{
   font-family: myFirstFont;
-  font-size: 24px;
+  font-size: 21px;
 }
 .title3{
-  font-size: 18px;
+  font-size: 15px;
   margin-top: 40px;
   text-align: center;
   font-family: myFirstFont;
 }
 .title3 h3{
-  font-size: 18px;
+  font-size: 15px;
   font-family: mySecondFont;
 }
 .container{
